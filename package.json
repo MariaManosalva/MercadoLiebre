@@ -1,0 +1,22 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "Practica clase 11",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaManosalva/MercadoLiebre.git"
+  },
+  "author": "Maria Manosalva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaManosalva/MercadoLiebre/issues"
+  },
+  "homepage": "https://github.com/MariaManosalva/MercadoLiebre#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

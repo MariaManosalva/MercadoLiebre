@@ -1,17 +1,12 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require ('express');
+const path = require ('path');
 
-app.use(express.static('public'));
+const app = express();
 
-app.listen(port, () => {
-  console.log(`Levantando servidor ${port}`)
+app.use ( express.static( path.resolve ( __dirname , 'public')));
+
+app.listen (3000 , () => console.log ('Servidor levantado'));
+
+app.get ('/' , ( req , res ) =>{
+    res.sendFile ( path.resolve (__dirname , 'views/index.html'));
 })
-
-app.get("/", (req, res) => {
-   res.sendFile(__dirname + "/views/index.html");
-});
-
-app.get("/", (req, res) => {
-   res.sendFile(__dirname + "/views/index.html");
-});

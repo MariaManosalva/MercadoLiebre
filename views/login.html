@@ -48,9 +48,10 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="login">
     <form action="/" method="POST">
-      <input
+      <div class="content-login">
+        <input
         type="text"
         name="user"
         id="user"
@@ -58,20 +59,21 @@
         pattern="[a-z]{4,8}"
         title="4 to 8 lowercase letters"
         required
-      />
-      <input
+        />
+        <input
         type="password"
         name="pass"
         id="password"
         placeholder="Ingresá tu contraseña"
         required
-      />
-      <form action="/views/home.html">
-        <button type="submit">Enviar</button>
-      </form>
+        />
+        <form action="/views/home.html">
+          <button type="submit">Enviar</button>
+      </div>
+    </form>
   </main>
-  <footer>
-    <div class="content-footer">
+  <footer class="content-footer">
+    <div>
       <i class="fa-solid fa-credit-card"></i>
       <h3>Pagá con tarjeta o en efectivo</h3>
       <p>
@@ -94,6 +96,7 @@
         ¿No te gusta? ¡Devolvelo!
         En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
       </p>
+      <p></p>
     </div>
     <div>
       <h5>Copyright © 1999-2021 MercadoLiebre S.R.L.</h5>
